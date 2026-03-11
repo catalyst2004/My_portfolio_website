@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vicky Raj - A Software Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">Vicky <em>Raj</em></a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ══════════ HERO ══════════ -->
+<section id="hero">
+  <div class="hero-grid">
+    <!-- Left -->
+    <div>
+      <div class="hero-label reveal">Available for Internships</div>
+      <h1 class="hero-name reveal" style="transition-delay:.08s">
+        Vicky <em>Raj</em>
+      </h1>
+      <p class="hero-role reveal" style="transition-delay:.16s">
+        <span id="typed-text"></span><span id="cursor-blink"></span>
+      </p>
+      <p class="hero-bio reveal" style="transition-delay:.24s">
+        Welcome to my corner of the web! I specialize in Computer Science Programming and I'm eager to apply my skills in real-world projects through internships and collaborations. Take a look around to see what I've been working on and how I can contribute to your team!
+      </p>
+      <div class="hero-actions reveal" style="transition-delay:.32s">
+        <a href="#projects" class="btn btn-gold"><i class="fas fa-folder-open"></i> View My Work</a>
+        <a href="#contact" class="btn btn-outline"><i class="fas fa-paper-plane"></i> Get In Touch</a>
+      </div>
+    </div>
+
+    <!-- Right card -->
+    <div class="reveal" style="transition-delay:.2s">
+      <div class="hero-card">
+        <div class="hero-avatar">
+          <img src="vicky1.jpg" alt="Vicky Raj" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
+        </div>
+        <div class="hero-card-name">Vicky Raj</div>
+        <div class="hero-card-title">CS Student · Dr. B.C. Roy Engineering College</div>
+        <div class="hero-stats">
+          <div class="hero-stat"><strong>3+</strong><span>Projects</span></div>
+          <div class="hero-stat"><strong>2027</strong><span>Grad Year</span></div>
+          <div class="hero-stat"><strong>CS</strong><span>Engineer</span></div>
+        </div>
+        <div class="hero-contact-row">
+          <a href="mailto:vickyraj12004@gmail.com" class="hero-contact-item"><i class="fas fa-envelope"></i> vickyraj12004@gmail.com</a>
+          <a href="tel:+917557746897" class="hero-contact-item"><i class="fas fa-phone"></i> +91 7557746897</a>
+          <a href="https://github.com/catalyst2004" target="_blank" rel="noopener noreferrer" class="hero-contact-item"><i class="fab fa-github"></i> github.com/catalyst2004</a>
+          <a href="https://linkedin.com/in/vicky-raj-2004abc" target="_blank" rel="noopener noreferrer" class="hero-contact-item"><i class="fab fa-linkedin"></i> vicky-raj-2004abc</a>
+          <a class="hero-contact-item"><i class="fas fa-map-marker-alt"></i> Patna, Bihar, India</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ ABOUT ══════════ -->
+<section id="about">
+  <div class="container">
+    <span class="section-eyebrow reveal">Who I Am</span>
+    <h2 class="section-heading reveal" style="transition-delay:.08s">About <em>Me</em></h2>
+    <div class="section-rule reveal" style="transition-delay:.12s"></div>
+
+    <div class="about-layout">
+      <div class="about-body reveal">
+        <p>I'm <strong>Vicky Raj</strong>, a Computer Science student at <strong>Dr. B.C. Roy Engineering College</strong> (graduating 2027), with a strong foundation in programming and a genuine curiosity for how systems are built — from the software layer down to the hardware.</p>
+        <p>My journey spans console game development in C, wireless IoT communication with ESP32, and cybersecurity fundamentals through real-world industry simulations. I believe great engineering is part creativity, part rigor.</p>
+        <p>I'm currently seeking internship opportunities where I can apply my skills, learn from experienced teams, and contribute to meaningful projects.</p>
+
+        <div class="about-meta">
+          <div class="about-meta-row"><span class="about-meta-key">Name</span><span class="about-meta-val">Vicky Raj</span></div>
+          <div class="about-meta-row"><span class="about-meta-key">Location</span><span class="about-meta-val">Patna, Bihar, India</span></div>
+          <div class="about-meta-row"><span class="about-meta-key">Degree</span><span class="about-meta-val">B.CS — Expected 2027</span></div>
+          <div class="about-meta-row"><span class="about-meta-key">Email</span><span class="about-meta-val"><a href="mailto:vickyraj12004@gmail.com">vickyraj12004@gmail.com</a></span></div>
+          <div class="about-meta-row"><span class="about-meta-key">GitHub</span><span class="about-meta-val"><a href="https://github.com/catalyst2004" target="_blank" rel="noopener noreferrer">catalyst2004</a></span></div>
+          <div class="about-meta-row"><span class="about-meta-key">LinkedIn</span><span class="about-meta-val"><a href="https://linkedin.com/in/vicky-raj-2004abc" target="_blank" rel="noopener noreferrer">vicky-raj-2004abc</a></span></div>
+          <div class="about-meta-row"><span class="about-meta-key">Status</span><span class="about-meta-val">Open to Internships &amp; Collaborations</span></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="about-traits">
+          <div class="trait-card reveal" style="transition-delay:.08s">
+            <div class="trait-icon">🔧</div>
+            <div>
+              <h4>Builder by Nature</h4>
+              <p>From C programs to IoT hardware, I love the end-to-end process of making ideas tangible — whether on a screen or a circuit board.</p>
+            </div>
+          </div>
+          <div class="trait-card reveal" style="transition-delay:.16s">
+            <div class="trait-icon">🔐</div>
+            <div>
+              <h4>Security-Aware Developer</h4>
+              <p>Completed a Tata Cybersecurity simulation, building a solid foundation in IAM principles and secure, responsible system design.</p>
+            </div>
+          </div>
+          <div class="trait-card reveal" style="transition-delay:.24s">
+            <div class="trait-icon">📡</div>
+            <div>
+              <h4>IoT Enthusiast</h4>
+              <p>Designed real wireless communication systems with ESP32 — where software meets hardware to solve physical-world problems.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-stack">
+          <div class="edu-item reveal" style="transition-delay:.3s">
+            <div class="edu-dot"></div>
+            <div>
+              <h4>Dr. B.C. Roy Engineering College</h4>
+              <p>Bachelor of Computer Science</p>
+              <span class="edu-year">EXPECTED 2027</span>
+            </div>
+          </div>
+          <div class="edu-item reveal" style="transition-delay:.36s">
+            <div class="edu-dot"></div>
+            <div>
+              <h4>New Era Public School</h4>
+              <p>All India Senior Secondary (Class XII)</p>
+              <span class="edu-year">2020 – 2022</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ SKILLS ══════════ -->
+<section id="skills">
+  <div class="container">
+    <span class="section-eyebrow reveal">What I Know</span>
+    <h2 class="section-heading reveal" style="transition-delay:.08s">Technical <em>Skills</em></h2>
+    <div class="section-rule reveal" style="transition-delay:.12s"></div>
+
+    <div class="skills-top">
+      <div class="skill-group reveal">
+        <div class="skill-group-header">
+          <div class="skill-group-icon"><i class="fas fa-code"></i></div>
+          <h3>Languages</h3>
+        </div>
+        <div class="skill-item">
+          <div class="skill-label"><span>C</span><span>80%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-width="80"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-label"><span>Python</span><span>85%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-label"><span>Java</span><span>65%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-width="65"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-group reveal" style="transition-delay:.1s">
+        <div class="skill-group-header">
+          <div class="skill-group-icon"><i class="fas fa-globe"></i></div>
+          <h3>Web Development</h3>
+        </div>
+        <div class="skill-item">
+          <div class="skill-label"><span>HTML5</span><span>82%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-width="82"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-label"><span>CSS3</span><span>78%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-width="78"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-label"><span>JavaScript</span><span>65%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-width="65"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-group reveal" style="transition-delay:.2s">
+        <div class="skill-group-header">
+          <div class="skill-group-icon"><i class="fas fa-wrench"></i></div>
+          <h3>Tools &amp; Platforms</h3>
+        </div>
+        <div class="skill-item">
+          <div class="skill-label"><span>VS Code</span><span>85%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-label"><span>Git &amp; GitHub</span><span>75%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-width="75"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-label"><span>Arduino / ESP32</span><span>68%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-width="68"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tag cloud -->
+    <div class="tag-section reveal" style="transition-delay:.25s">
+      <span class="tag-section-label">Technologies</span>
+      <div class="tag-cloud">
+        <span class="tag">C</span><span class="tag">Python</span><span class="tag">Java</span>
+        <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span>
+        <span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">ESP32</span>
+        <span class="tag">Arduino</span><span class="tag">VS Code</span><span class="tag">ESP-NOW</span>
+      </div>
+      <span class="tag-section-label">Soft Skills</span>
+      <div class="soft-row">
+        <span class="soft-tag">Communication</span>
+        <span class="soft-tag">Problem-Solving</span>
+        <span class="soft-tag">Time Management</span>
+        <span class="soft-tag">Team Collaboration</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ PROJECTS ══════════ -->
+<section id="projects">
+  <div class="container">
+    <span class="section-eyebrow reveal">What I've Built</span>
+    <h2 class="section-heading reveal" style="transition-delay:.08s">Featured <em>Projects</em></h2>
+    <div class="section-rule reveal" style="transition-delay:.12s"></div>
+
+    <div class="projects-grid">
+      <div class="project-card reveal">
+        <div class="project-header">
+          <span class="project-index">01</span>
+          <span class="project-category">Console Game</span>
+        </div>
+        <div class="project-body">
+          <div class="project-icon">🎮</div>
+          <h3 class="project-title">Tic-Tac-Toe Game</h3>
+          <p class="project-desc">A two-player console-based Tic-Tac-Toe game written in C. Implements turn-based logic, win and draw detection, and input validation for a smooth, error-free gameplay experience.</p>
+          <div class="project-tags">
+            <span class="project-tag">C</span>
+            <span class="project-tag">Arrays</span>
+            <span class="project-tag">Functions</span>
+            <span class="project-tag">Console</span>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/catalyst2004" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fab fa-github"></i> View on GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" style="transition-delay:.1s">
+        <div class="project-header">
+          <span class="project-index">02</span>
+          <span class="project-category">IoT / Hardware</span>
+        </div>
+        <div class="project-body">
+          <div class="project-icon">📡</div>
+          <h3 class="project-title">IoT Morse Code Communicator</h3>
+          <p class="project-desc">Designed an IoT device using ESP32, sensors, and a buzzer to encode, transmit, and decode Morse code wirelessly over the ESP-NOW protocol — enabling real-time, low-latency communication between devices.</p>
+          <div class="project-tags">
+            <span class="project-tag">ESP32</span>
+            <span class="project-tag">Arduino</span>
+            <span class="project-tag">ESP-NOW</span>
+            <span class="project-tag">C++</span>
+            <span class="project-tag">IoT</span>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/catalyst2004" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fab fa-github"></i> View on GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" style="transition-delay:.2s">
+        <div class="project-header">
+          <span class="project-index">03</span>
+          <span class="project-category">Cybersecurity</span>
+        </div>
+        <div class="project-body">
+          <div class="project-icon">🛡️</div>
+          <h3 class="project-title">Live DDoS Attack Map</h3>
+          <p class="project-desc">A real-time web-based visualization mapping live Distributed Denial-of-Service attacks globally. Displays attack origins, targets, and intensity through an interactive browser interface.</p>
+          <div class="project-tags">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">Security</span>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/catalyst2004/Live-Ddos-attack-map" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fab fa-github"></i> View Source</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ ACHIEVEMENTS ══════════ -->
+<section id="achievements">
+  <div class="container">
+    <span class="section-eyebrow reveal">Recognition</span>
+    <h2 class="section-heading reveal" style="transition-delay:.08s">Certifications &amp; <em>Achievements</em></h2>
+    <div class="section-rule reveal" style="transition-delay:.12s"></div>
+
+    <div class="ach-list">
+      <div class="ach-card reveal">
+        <div class="ach-badge">🏅</div>
+        <div class="ach-content">
+          <h3>Tata Cybersecurity — Security Analyst Job Simulation</h3>
+          <div class="ach-pills">
+            <span class="ach-pill"><i class="fas fa-building"></i> Tata Consultancy Services × Forage</span>
+            <span class="ach-pill"><i class="fas fa-calendar"></i> August 2025</span>
+          </div>
+          <ul class="ach-points">
+            <li>Completed a job simulation focused on Identity and Access Management (IAM) in collaboration with a Cybersecurity Consulting team at TCS.</li>
+            <li>Acquired expertise in IAM principles, cybersecurity best practices, and strategic alignment with business objectives.</li>
+            <li>Delivered comprehensive documentation and presentations showcasing the ability to communicate complex technical concepts effectively.</li>
+          </ul>
+          <a href="https://www.theforage.com/simulations/tata/cybersecurity-sbda" target="_blank" rel="noopener noreferrer" class="ach-cta">
+            View Certificate on Forage <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CONTACT ══════════ -->
+<section id="contact">
+  <div class="container">
+    <span class="section-eyebrow reveal">Let's Talk</span>
+    <h2 class="section-heading reveal" style="transition-delay:.08s">Get In <em>Touch</em></h2>
+    <div class="section-rule reveal" style="transition-delay:.12s"></div>
+
+    <div class="contact-layout">
+      <div class="contact-sidebar reveal">
+        <h3>Open to Opportunities</h3>
+        <p>Whether you have an internship offer, a project to collaborate on, or simply want to connect — I'd love to hear from you. I typically respond within 24 hours.</p>
+        <div class="contact-list">
+          <a href="mailto:vickyraj12004@gmail.com" class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-item-text"><strong>Email</strong><span>vickyraj12004@gmail.com</span></div>
+          </a>
+          <a href="tel:+917557746897" class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-phone"></i></div>
+            <div class="contact-item-text"><strong>Phone</strong><span>+91 7557746897</span></div>
+          </a>
+          <a href="https://linkedin.com/in/vicky-raj-2004abc" target="_blank" rel="noopener noreferrer" class="contact-item">
+            <div class="contact-item-icon"><i class="fab fa-linkedin-in"></i></div>
+            <div class="contact-item-text"><strong>LinkedIn</strong><span>vicky-raj-2004abc</span></div>
+          </a>
+          <a href="https://github.com/catalyst2004" target="_blank" rel="noopener noreferrer" class="contact-item">
+            <div class="contact-item-icon"><i class="fab fa-github"></i></div>
+            <div class="contact-item-text"><strong>GitHub</strong><span>catalyst2004</span></div>
+          </a>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" style="transition-delay:.15s" id="contact-form" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="f-name">Your Name</label>
+            <input type="text" id="f-name" placeholder="Full name" required/>
+          </div>
+          <div class="form-group">
+            <label for="f-email">Email Address</label>
+            <input type="email" id="f-email" placeholder="you@example.com" required/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="f-subject">Subject</label>
+          <input type="text" id="f-subject" placeholder="Internship inquiry / Collaboration / Hello!" required/>
+        </div>
+        <div class="form-group">
+          <label for="f-message">Message</label>
+          <textarea id="f-message" placeholder="Share your project idea, opportunity, or message..." required></textarea>
+        </div>
+        <button type="submit" class="btn-submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+        <div class="form-feedback" id="form-feedback"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-inner">
+    <a href="#hero" class="footer-brand">Thankyou for your interest. <em>Visit Again!</em></a>
+    <p>© 2025 Vicky Raj — All rights reserved.</p>
+    <div class="footer-socials">
+      <a href="https://github.com/catalyst2004" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/vicky-raj-2004abc" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:vickyraj12004@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+</footer>
+
+<div id="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">
+  <i class="fas fa-chevron-up"></i>
+</div>
+
+</body>
+</html>
